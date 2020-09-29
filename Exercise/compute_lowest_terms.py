@@ -3,10 +3,13 @@
 def lowest_terms(x):
 	return ""
 
-""" using recursion to get the greatest common divisor 
-	keeping it simple with Lambda
 
-	this collects integer a and integer b and returns their greatest common divisor
-"""
-gcd = lambda a,b : a if (b == 0) else gcd(b, a%b)
+##reduceFrac function
+## returns the reduce form
+def reduceFrac(num,den):
+	x = gcd(num, den)
+	num = num // x
+	den = den // x
 
+	
+	return "{}/{}".format(int(num), int(den))
