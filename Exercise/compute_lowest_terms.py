@@ -1,7 +1,19 @@
 ## TODO: complete the function "lowest_terms" below
 ##lowest terms
 def lowest_terms(x):
-	return ""
+	
+x = x.split('/')
+	numerator = int(x[0])
+	denominator = int(x[1])
+
+	""" check for undefined and zeroError """
+	if denominator == 0:
+		return "Undefined" 
+	elif numerator == 0:
+		return "0"
+	else:
+		return reduceFrac(numerator, denominator)
+	
 """ using recursion to get the greatest common divisor 
 	keeping it simple with Lambda
 
