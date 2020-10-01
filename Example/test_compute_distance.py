@@ -1,7 +1,7 @@
 from compute_distance import distance_to_destination
 
 def test_distance_to_destination_4():
-    assert(distance_to_destination(22, 26) == 14)
+    assert(distance_to_destination(22, 26) == 4)
 
 def test_distance_to_destination_0():
     assert(distance_to_destination(253, 253) == 0)
@@ -14,3 +14,5 @@ def test_distance_to_destination_1():
 
 def test_distance_to_destination_100():
     assert(distance_to_destination(100, 200) == 100)
+
+
